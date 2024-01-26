@@ -175,6 +175,9 @@ ul.skills-list li:hover {
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 .card h1 {
@@ -211,4 +214,19 @@ ul.skills-list li:hover {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 200px;
+}
+
+.MuiSvgIcon-root {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    margin: 10px 10px;
 }
