@@ -20,6 +20,7 @@ function App() {
               <div>HTML</div>
               <div>CSS</div>
               <div>SASS</div>
+              <div>javaScript</div>
             </div>
             <div className='links'>
               <a target='_blank' className='anchor-tag-link' href="https://github.com/marcotenaglia/e-commerce-js">
@@ -36,13 +37,13 @@ function App() {
         <div className="card">
           <div>
             <h1>To-do List</h1>
-            <p>Checklist for tasks and to-do's</p>
+            <p>Easy and intuitive to-do list for pending tasks</p>
           </div>
           <div>
             <div className='lenguages'>
               <div>HTML</div>
               <div>CSS</div>
-              <div>SASS</div>
+              <div>javaScript</div>
             </div>
             <div className='links'>
               <a target='blank' href="https://github.com/marcotenaglia/todo-list-js">
@@ -56,7 +57,7 @@ function App() {
         <div className="card">
           <div>
             <h1>Band Web</h1>
-            <p>A band web for content, biography, shows and contact</p>
+            <p>A personalized static band website with navigable distinct sections.</p>
           </div>
           <div>
             <div className='lenguages'>
@@ -76,7 +77,7 @@ function App() {
         <div className="card">
           <div>
             <h1>Music Single Web</h1>
-            <p>This was an experimental project for my band. At the end of a gifted fanzine, people would find a QR code that redirected to this exclusive demo.</p>
+            <p>An exclusive preview of the band's song. People would find a QR code at the end of a physical fanzine that redirects to this demo version.</p>
           </div>
           <div>
             <div className='lenguages'>
@@ -95,15 +96,14 @@ function App() {
 
         <div className="card">
           <div>
-            <h1> Delivery Receipt Generation</h1>
-            <p>Google Apps Script converts pertinent information into a delivery receipt PDF and saves it in Google Drive.</p>
+            <h1> Dispatch Notes Generation</h1>
+            <p>Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive.</p>
           </div>
 
           <div>
             <div className='lenguages'>
               <div>GAS</div>
               <div>Javascript</div>
-              <div>Spreadsheet</div>
               <div>CSS</div>
               <div>HTML</div>
             </div>
@@ -126,7 +126,6 @@ function App() {
             <div className='lenguages'>
               <div>GAS</div>
               <div>Javascript</div>
-              <div>Spreadsheet</div>
               <div>CSS</div>
               <div>HTML</div>
             </div>
