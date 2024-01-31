@@ -147,7 +147,7 @@ function App() {
 
       <h2 className='section-title'>SKILLS</h2>
 
-      <ul className='skills-list'>
+      <ul className='items-list'>
         <li>Javascript</li>
         <li>React</li>
         <li>Google Apps Script</li>
@@ -163,14 +163,14 @@ function App() {
   const Contact = () => (
     <div id='contact' className="contact">
       <h2 className='section-title'>CONTACT</h2>
-      <div className='contact-box'>
-        <div>
+      <ul className='contact-box items-list'>
+        <li>
           Email
-        </div>
-        <div>
+        </li>
+        <li>
           Github
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 
