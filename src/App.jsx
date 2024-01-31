@@ -178,7 +178,7 @@ function App() {
 
     <>
       <header className="header center">
-        <div className='header-title'>ASLFJASLFK</div>
+        <div className='header-title'>Marco Tenaglia</div>
         <nav className="nav">
           <div>
             <a href="#skills" className='anchor-tag'>Skills</a>
@@ -191,7 +191,7 @@ function App() {
       <main className="main">
         <div className='container'>
 
-          <div className='title'>ASKJFHAS</div>
+          <div className='title'>MARCO TENAGLIA</div>
           <div className='subtitle'>Full Stack Developer</div>
 
           <div className="info">
