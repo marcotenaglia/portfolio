@@ -191,7 +191,7 @@ function App() {
       <main className="main">
         <div className='container'>
 
-          <div className='title'>MARCO TENAGLIA</div>
+          <div className='title'>Marco Tenaglia</div>
           <div className='subtitle'>Full Stack Developer</div>
 
           <div className="info">
