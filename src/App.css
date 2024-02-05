@@ -288,3 +288,8 @@ li {
 .material-symbols-outlined {
     margin-left: 24px;
 }
+
+.nav-btns {
+    display: flex;
+    flex-flow: row;
+}

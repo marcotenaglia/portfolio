@@ -62,7 +62,7 @@ function App() {
         <div className='header-title'>Marco Tenaglia</div>
         <nav className="nav">
 
-          <div>
+          <div className='nav-btns'>
             <a href="#skills" className='anchor-tag'>Skills</a>
             <a href="#projects" className='anchor-tag'>Projects</a>
             <a href="#contact" className='anchor-tag'>Contact</a>
