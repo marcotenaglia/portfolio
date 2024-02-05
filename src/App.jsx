@@ -1,9 +1,48 @@
 import './App.css'
+import React, { useState, useEffect } from 'react';
 
 
 function App() {
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    document.body.classList.toggle('body-light', isDarkMode);
+
+    const cardElements = document.querySelectorAll('.card');
+    cardElements.forEach((cardElement) => {
+      cardElement.classList.toggle('card-light', isDarkMode);
+    });
+
+    const cardPElements = document.querySelectorAll('.card-p');
+    cardPElements.forEach((cardPElement) => {
+      cardPElement.classList.toggle('card-p-light', isDarkMode);
+    });
+
+    const anchorTag = document.querySelectorAll('.anchor-tag');
+    anchorTag.forEach((anchorTag) => {
+      anchorTag.classList.toggle('anchor-tag-light', isDarkMode);
+    });
+
+    const svgElements = document.querySelectorAll('svg');
+
+    svgElements.forEach((svgElement) => {
+      if (svgElement.tagName.toLowerCase() === 'svg') {
+        svgElement.setAttribute('fill', isDarkMode ? 'rgb(0, 0, 0)' : 'rgb(219, 226, 232)');
+      }
+    });
+
+    const listItems = document.querySelectorAll('.li-contact');
+    listItems.forEach((listItems) => {
+      listItems.classList.toggle('li-light', isDarkMode);
+    }); 
+
+  }
+    , [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const Projects = () => (
     <div id="projects" className="projects">
@@ -13,7 +52,7 @@ function App() {
         <div className="card">
           <div>
             <h1>To-do List</h1>
-            <p>Easy and intuitive to-do list for pending tasks</p>
+            <p className='card-p'>Easy and intuitive to-do list for pending tasks</p>
           </div>
           <div>
             <div className='lenguages'>
@@ -33,7 +72,7 @@ function App() {
         <div className="card">
           <div>
             <h1>Band Web</h1>
-            <p>A personalized static band website with navigable distinct sections.</p>
+            <p className='card-p' >A personalized static band website with navigable distinct sections.</p>
           </div>
           <div>
             <div className='lenguages'>
@@ -45,15 +84,15 @@ function App() {
               <a target='blank' className='anchor-tag-link' href="https://github.com/marcotenaglia/las-aventuras-web">
                 <svg fill='rgb(219, 226, 232)' className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg>
               </a>
-              <a target='blank' className='anchor-tag-link' href="https://las-aventuras-web.vercel.app/"><svg className="MuiSvgIcon-root" fill='rgb(219, 226, 232)' focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>
+              <a target='blank' className='anchor-tag-link' href="https://marcotenaglia.github.io/las-aventuras-web/"><svg className="MuiSvgIcon-root" fill='rgb(219, 226, 232)' focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>
             </div>
           </div>
         </div>
-        
+
         <div className="card">
           <div>
             <h1>E-commerce</h1>
-            <p>Responsive e-commerce with shoping cart</p>
+            <p className='card-p'>Responsive e-commerce with shoping cart</p>
           </div>
           <div>
             <div className='lenguages'>
@@ -77,7 +116,7 @@ function App() {
         <div className="card">
           <div>
             <h1>Music Single Web</h1>
-            <p>An exclusive preview of the band's song. People would find a QR code at the end of a physical fanzine that redirects to this demo version.</p>
+            <p className='card-p'>An exclusive preview of the band's song. People would find a QR code at the end of a physical fanzine that redirects to this demo version.</p>
           </div>
           <div>
             <div className='lenguages'>
@@ -89,7 +128,7 @@ function App() {
               <a target='blank' href="https://github.com/marcotenaglia/las-aventuras-demo">
                 <svg fill='rgb(219, 226, 232)' className="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg>
               </a>
-              <a target='blank' href="https://las-aventuras-demo.vercel.app/"><svg className="MuiSvgIcon-root" fill='rgb(219, 226, 232)' focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>
+              <a target='blank' href="https://marcotenaglia.github.io/las-aventuras-demo/"><svg className="MuiSvgIcon-root" fill='rgb(219, 226, 232)' focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></svg></a>
             </div>
           </div>
         </div>
@@ -97,7 +136,7 @@ function App() {
         <div className="card">
           <div>
             <h1> Dispatch Notes Generation</h1>
-            <p>Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive.</p>
+            <p className='card-p'>Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive.</p>
           </div>
 
           <div>
@@ -119,7 +158,7 @@ function App() {
         <div className="card">
           <div>
             <h1>Budget Generation</h1>
-            <p>A Google Apps Script code that fills a template with updated info from a spreadsheet, converts it into a PDF and saves it in Google Drive </p>
+            <p className='card-p'>A Google Apps Script code that fills a template with updated info from a spreadsheet, converts it into a PDF and saves it in Google Drive </p>
           </div>
           <div>
             <div className='lenguages'>
@@ -164,10 +203,10 @@ function App() {
     <div id='contact' className="contact">
       <h2 className='section-title'>CONTACT</h2>
       <ul className='contact-box items-list'>
-        <li>
+        <li className='li-contact'>
           Email
         </li>
-        <li>
+        <li className='li-contact'>
           Github
         </li>
       </ul>
@@ -177,16 +216,29 @@ function App() {
   return (
 
     <>
+
+
       <header className="header center">
         <div className='header-title'>Marco Tenaglia</div>
         <nav className="nav">
+
           <div>
             <a href="#skills" className='anchor-tag'>Skills</a>
             <a href="#projects" className='anchor-tag'>Projects</a>
             <a href="#contact" className='anchor-tag'>Contact</a>
           </div>
+
+          <div>
+            <button onClick={toggleDarkMode}>
+              <span class="material-symbols-outlined dark-mode">
+                {isDarkMode ? 'light_mode' : 'dark_mode'}
+              </span>
+            </button>
+          </div>
+
         </nav>
       </header>
+
 
       <main className="main">
         <div className='container'>

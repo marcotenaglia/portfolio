@@ -4,17 +4,17 @@ body {
     background: linear-gradient(0deg, rgb(11, 9, 27) 0%, rgb(26, 2, 91) 50%, rgb(13, 11, 35) 100%);
     background-size: 130%;
     background-repeat: no-repeat;
+    transition: ease-in 0.3s;
+
 }
 
-.body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+.body-light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(220, 221, 230) 0%, rgba(186, 167, 232, 1) 50%, rgba(220, 221, 230) 100%);
+    color: black;
+    transition: ease-in 0.3s;
 }
+
 
 body,
 input,
@@ -63,6 +63,7 @@ button {
     width: 95%;
     margin: 0 auto;
     height: 6em;
+
 }
 
 button {
@@ -70,6 +71,7 @@ button {
     background-color: inherit;
     color: inherit;
     cursor: pointer;
+
 }
 
 .info {
@@ -87,6 +89,12 @@ button {
     margin-left: 1.5em;
     text-decoration: none;
     color: rgb(219, 226, 232);
+    transition: ease-in-out 0.3s;
+}
+
+.anchor-tag-light {
+    color: black;
+    transition: ease-in-out 0.3s;
 }
 
 .theme-btn {
@@ -114,11 +122,24 @@ li {
     margin-left: 1.5em;
     background-color: rgba(74, 54, 138, 0.248);
     padding: 0.5em;
+    transition: ease-in 0.3s;
 }
 
-ul.items-list li:hover {
+.li-light {
+    background-color: rgba(76, 28, 236, 0.162);
+    transition: ease-in-out 0.3s;
+}
+
+.li-contact:hover {
     background-color: rgba(63, 51, 132, 0.504);
     transition: 0.3s;
+
+}
+
+.li-light:hover {
+    background-color: rgba(26, 8, 85, 0.529);
+    transition: 0.3s;
+    color: rgb(220, 220, 255);
 
 }
 
@@ -127,6 +148,16 @@ ul.items-list li:hover {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+}
+
+.skills li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills li:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
 }
 
 .items-list {
@@ -169,7 +200,7 @@ ul.items-list li:hover {
 .card {
     width: 250px;
     height: 350px;
-    background-color: rgba(64, 59, 141, 0.226);
+    background-color: rgba(50, 45, 116, 0.226);
     padding: 1em;
     margin: 1em;
     text-align: center;
@@ -178,15 +209,30 @@ ul.items-list li:hover {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    
+}
+
+.card-light {
+    background-color: rgba(68, 0, 157, 0.145);
+    box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card h1 {
     font-size: 1.5em;
 }
 
-.card p {
+.card-p {
     font-size: 1em;
     color: rgb(196, 194, 194);
+    transition: ease-in-out 0.3s;
+
+}
+
+.card-p-light {
+    color: black;
+    transition: ease-in-out 0.3s;
+
 }
 
 .card:hover {
@@ -219,7 +265,7 @@ ul.items-list li:hover {
 .MuiSvgIcon-root {
     width: 24px;
     height: 24px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .links {
@@ -230,3 +276,8 @@ ul.items-list li:hover {
 .links a {
     margin: 10px 10px;
 }
+
+.dark-mode {
+    width: 100px;
+}
+
