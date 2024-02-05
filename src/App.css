@@ -9,8 +9,8 @@ body {
 
 
 .body-light {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(220, 221, 230) 0%, rgba(186, 167, 232, 1) 50%, rgba(220, 221, 230) 100%);
+    background: rgb(186,167,232);
+background: linear-gradient(0deg, rgba(186,167,232,1) 0%, rgba(255,255,255,1) 50%, rgba(186,167,232,1) 100%);
     color: black;
     transition: ease-in 0.3s;
 }
