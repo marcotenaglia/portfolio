@@ -225,7 +225,7 @@ li {
 .card-p {
     font-size: 1em;
     color: rgb(196, 194, 194);
-    transition: ease-in-out 0.3s;
+    transition: ease-in 0.3s;
 
 }
 
@@ -277,7 +277,14 @@ li {
     margin: 10px 10px;
 }
 
-.dark-mode {
-    width: 100px;
+.dark-mode-btn {
+    padding: 0px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.material-symbols-outlined {
+    margin-left: 24px;
+}
