@@ -49,10 +49,6 @@ function App() {
 
 
 
-
-
-
-
   return (
 
     <>
@@ -91,12 +87,12 @@ function App() {
             <div id="projects" className="projects">
               <h2 className='section-title'>PROJECTS</h2>
               <div className='card-box'>
-              <Projects title="Band Web" description="A personalized static band website with navigable distinct sections." languages={['HTML', 'CSS', 'SASS']} linkWeb='https://marcotenaglia.github.io/las-aventuras-web/' linkCode='https://github.com/marcotenaglia/las-aventuras-web' />
-              <Projects title="To-do List" description="Easy and intuitive to-do list for pending tasks." languages={['HTML', 'CSS', 'JavaScript']} linkWeb='https://marcotenaglia.github.io/todo-list-js/' linkCode='https://github.com/marcotenaglia/todo-list-js'/>
-              <Projects title="E-commerce" description="Responsive e-commerce with shoping cart." languages= {['HTML', 'CSS', 'SASS', 'javaScript']} linkWeb='https://marcotenaglia.github.io/e-commerce-js/' linkCode='https://github.com/marcotenaglia/e-commerce-js' />
-              <Projects title="Music Single Web" description="An exclusive preview of the band's song. People would find a QR code at the end of a physical fanzine that redirects to this demo version." languages={['HTML', 'CSS', 'SASS']} linkWeb='https://marcotenaglia.github.io/las-aventuras-demo/' linkCode='https://github.com/marcotenaglia/las-aventuras-demo' />
-              <Projects title="Dispatch Notes Generation" description="Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=CtWlEnBq0h0' linkCode='https://github.com/marcotenaglia/crowntainer-apps-script'/>
-              <Projects title="Dispatch Notes Generation" description="Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=B-kkEBgC9p4' linkCode='https://github.com/marcotenaglia/medios-litoral-apps-script' />                
+                <Projects title="Band Web" description="A personalized static band website with navigable distinct sections." languages={['HTML', 'CSS', 'SASS']} linkWeb='https://marcotenaglia.github.io/las-aventuras-web/' linkCode='https://github.com/marcotenaglia/las-aventuras-web' />
+                <Projects title="To-do List" description="Easy and intuitive to-do list for pending tasks." languages={['HTML', 'CSS', 'JavaScript']} linkWeb='https://marcotenaglia.github.io/todo-list-js/' linkCode='https://github.com/marcotenaglia/todo-list-js' />
+                <Projects title="E-commerce" description="Responsive e-commerce with shoping cart." languages={['HTML', 'CSS', 'SASS', 'javaScript']} linkWeb='https://marcotenaglia.github.io/e-commerce-js/' linkCode='https://github.com/marcotenaglia/e-commerce-js' />
+                <Projects title="Music Single Web" description="An exclusive preview of the band's song. People would find a QR code at the end of a physical fanzine that redirects to this demo version." languages={['HTML', 'CSS', 'SASS']} linkWeb='https://marcotenaglia.github.io/las-aventuras-demo/' linkCode='https://github.com/marcotenaglia/las-aventuras-demo' />
+                <Projects title="Dispatch Notes Generation" description="Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=CtWlEnBq0h0' linkCode='https://github.com/marcotenaglia/crowntainer-apps-script' />
+                <Projects title="Dispatch Notes Generation" description="Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=B-kkEBgC9p4' linkCode='https://github.com/marcotenaglia/medios-litoral-apps-script' />
               </div>
             </div>
             <Skills />

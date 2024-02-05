@@ -1,5 +1,4 @@
 body {
-
     background: rgb(9, 4, 47);
     background: linear-gradient(0deg, rgb(11, 9, 27) 0%, rgb(26, 2, 91) 50%, rgb(13, 11, 35) 100%);
     background-size: 130%;
@@ -7,6 +6,7 @@ body {
     transition: ease-in 0.3s;
 
 }
+
 
 .body-light {
     background: rgb(255, 255, 255);
