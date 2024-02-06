@@ -1,22 +1,22 @@
 
 import React from "react";
 
-const Skills = () => (
-    <div id="skills" className="skills">
+const Skills = ({ isDarkMode }) => (
+  <div id="skills" className="items-box">
 
-      <h2 className='section-title'>SKILLS</h2>
+    <h2 className='section-title'>SKILLS</h2>
 
-      <ul className='items-list'>
-        <li>Javascript</li>
-        <li>React</li>
-        <li>Google Apps Script</li>
-        <li>Appsheet</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>SASS</li>
-        <li>Git Hub</li>
-      </ul>
-    </div>
-  );
+    <ul className={`items-list items-${isDarkMode ? "light" : "dark"}`}>
+      <li className="items">Javascript</li>
+      <li className="items">React</li>
+      <li className="items">Google Apps Script</li>
+      <li className="items">Appsheet</li>
+      <li className="items">HTML</li>
+      <li className="items">CSS</li>
+      <li className="items">SASS</li>
+      <li className="items">Git</li>
+    </ul>
+  </div>
+);
 
-  export default Skills;
+export default Skills;

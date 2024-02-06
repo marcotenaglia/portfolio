@@ -1,4 +1,8 @@
 body {
+    margin: 0px;
+}
+
+.body-dark {
     background: rgb(9, 4, 47);
     background: linear-gradient(0deg, rgb(11, 9, 27) 0%, rgb(26, 2, 91) 50%, rgb(13, 11, 35) 100%);
     background-size: 130%;
@@ -9,8 +13,8 @@ body {
 
 
 .body-light {
-    background: rgb(186,167,232);
-background: linear-gradient(0deg, rgba(186,167,232,1) 0%, rgba(255,255,255,1) 50%, rgba(186,167,232,1) 100%);
+    background: rgb(186, 167, 232);
+    background: linear-gradient(0deg, rgba(186, 167, 232, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(186, 167, 232, 1) 100%);
     color: black;
     transition: ease-in 0.3s;
 }
@@ -84,17 +88,23 @@ button {
     font-weight: 500;
 }
 
-.anchor-tag {
+.nav-anchor-tag {
     font-weight: 500;
     margin-left: 1.5em;
     text-decoration: none;
-    color: rgb(219, 226, 232);
-    transition: ease-in-out 0.3s;
+
 }
 
-.anchor-tag-light {
+.nav-anchor-tag-dark {
+    color: rgb(219, 226, 232);
+    transition: ease-in 0.3s;
+
+}
+
+.nav-anchor-tag-light {
     color: black;
-    transition: ease-in-out 0.3s;
+    transition: ease-in 0.3s;
+
 }
 
 .theme-btn {
@@ -114,65 +124,7 @@ button {
 
 .nav {
     display: flex;
-
-}
-
-li {
-    list-style: none;
-    margin-left: 1.5em;
-    background-color: rgba(74, 54, 138, 0.248);
-    padding: 0.5em;
-    transition: ease-in 0.3s;
-}
-
-.li-light {
-    background-color: rgba(76, 28, 236, 0.162);
-    transition: ease-in-out 0.3s;
-}
-
-.li-contact:hover {
-    background-color: rgba(63, 51, 132, 0.504);
-    transition: 0.3s;
-
-}
-
-.li-light:hover {
-    background-color: rgba(26, 8, 85, 0.529);
-    transition: 0.3s;
-    color: rgb(220, 220, 255);
-
-}
-
-.skills {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.skills li {
-    transition: transform 0.3s ease-in-out;
-}
-
-.skills li:hover {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    transition: transform 0.3s ease-in-out;
-}
-
-.items-list {
-    display: flex;
-    max-width: 450px;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0%;
-}
-
-.items-list li {
-    margin: 0.5em;
+    
 }
 
 .section {
@@ -200,11 +152,9 @@ li {
 .card {
     width: 250px;
     height: 350px;
-    background-color: rgba(50, 45, 116, 0.226);
     padding: 1em;
     margin: 1em;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-flow: column;
@@ -212,10 +162,15 @@ li {
     
 }
 
+.card-dark {
+    background-color: rgba(50, 45, 116, 0.226);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+
 .card-light {
     background-color: rgba(68, 0, 157, 0.145);
     box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    transition: transform 0.3s ease-in-out;
 }
 
 .card h1 {
@@ -224,15 +179,18 @@ li {
 
 .card-p {
     font-size: 1em;
+    transition: ease-in 0.3s;
+    
+}
+
+.card-p-dark {
     color: rgb(196, 194, 194);
     transition: ease-in 0.3s;
-
 }
 
 .card-p-light {
-    color: black;
-    transition: ease-in-out 0.3s;
-
+    color: black;   
+    transition: ease-in 0.3s; 
 }
 
 .card:hover {
@@ -254,13 +212,82 @@ li {
     margin: 0.5em;
 }
 
+.items-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-list {
+    display: flex;
+    max-width: 450px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0%;
+}
+
+.items {
+    list-style: none;
+    margin-left: 1.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    transition: ease-in 0.3s;
+}
+
+.items-dark > * {
+    background-color: rgba(74, 54, 138, 0.248);
+    transition: ease-in 0.3s;
+
+}
+
+.items-light > * {
+    background-color: rgba(76, 28, 236, 0.162);
+    transition: ease-in 0.3s;
+  /*  box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; VER ESTOOOOOOOO*/ 
+}
+
+
+
+.items:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
 .contact-box {
     display: flex;
+    flex-flow: column;
+}
+
+.contact-list {
     flex-flow: row;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 200px;
 }
+
+.contact-list .items {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.contact-items-dark:hover {
+    background-color: rgba(63, 51, 132, 0.504);
+    transition: 0.3s;
+
+}
+
+.contact-items-light:hover {
+    background-color: rgba(26, 8, 85, 0.529);
+    color: rgb(220, 220, 255);
+    transition: 0.3s;
+}
+
+
 
 .MuiSvgIcon-root {
     width: 24px;
