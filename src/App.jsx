@@ -9,8 +9,8 @@ function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  
-  useEffect(() => {  
+
+  useEffect(() => {
 
   }
     , [isDarkMode]);
@@ -28,7 +28,10 @@ function App() {
       <body className={isDarkMode ? "body-light" : "body-dark"}>
 
         <header className="header center">
-          <div className='header-title'>Marco Tenaglia</div>
+          <div className='header-title'>
+            <div>Marco</div> 
+            <div>Tenaglia</div>
+          </div>
           <nav className="nav">
 
             <div className='nav-btns'>
@@ -53,7 +56,7 @@ function App() {
             <div className='subtitle'>Full Stack Developer</div>
 
             <div className="info">
-              <p className='info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consectetur amet libero distinctio culpa inventore vero, unde officia ipsum odio tempore ea rem repellat deserunt incidunt nostrum ullam quia suscipit?</p>
+              <p className='info-text'></p>
             </div>
             <section className='section'>
 
@@ -69,7 +72,7 @@ function App() {
                 </div>
               </div>
               <Skills isDarkMode={isDarkMode} />
-              <Contact isDarkMode={isDarkMode}/>
+              <Contact isDarkMode={isDarkMode} />
             </section>
 
           </div>

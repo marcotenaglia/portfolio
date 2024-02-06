@@ -4,7 +4,7 @@ const Contact = ({ isDarkMode }) => (
   <div id='contact' className="contact-box">
     <h2 className='section-title'>CONTACT</h2>
     <div className={`items-list contact-list items-${isDarkMode ? "light" : "dark"}`}>
-      <a href="mailto:marcotenaglia98Q.com" className={`items contact-items-${isDarkMode ? "dark" : "light"}`}>
+      <a href="mailto:marcotenaglia98Q.com" className={`items contact-items-${isDarkMode ?  "light" : "dark"}`}>
         Email
       </a>
       <a href='https://github.com/marcotenaglia' className={`items contact-items-${isDarkMode ?  "light" : "dark"}`}>

@@ -31,7 +31,7 @@ button {
 .container {
     display: flex;
     flex-flow: column;
-    margin-top: 7em;
+    margin-top: 12em;
     justify-content: center;
     align-items: center;
 }
@@ -43,8 +43,14 @@ button {
     margin-bottom: 5px;
 }
 
+.info {
+    display: flex;
+    width: 50%;
+    margin-bottom: 20em;
+}
+
 .info-text {
-    margin: 20px 10px;
+    margin: 0px;
 }
 
 .subtitle {
@@ -78,14 +84,13 @@ button {
 
 }
 
-.info {
-    display: flex;
-    width: 50%;
-    margin-bottom: 30%;
-}
-
 .header-title {
+    display: flex;
+    justify-content: start;
+    align-items: center ;
+    gap: .5em;
     font-weight: 500;
+    flex-wrap: wrap;
 }
 
 .nav-anchor-tag {
@@ -212,11 +217,12 @@ button {
     margin: 0.5em;
 }
 
-.items-box {
+.skills-box {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    margin-top: 3em;
 }
 
 .items-list {
@@ -261,18 +267,27 @@ button {
 .contact-box {
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+
 }
 
 .contact-list {
     flex-flow: row;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 200px;
 }
 
 .contact-list .items {
     text-decoration: none;
     color: inherit; 
+}
+
+.contact-items-light {
+    background-color: rgba(39, 23, 185, 0.223);
+
 }
 
 .contact-items-dark:hover {

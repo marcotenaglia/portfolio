@@ -2,7 +2,7 @@
 import React from "react";
 
 const Skills = ({ isDarkMode }) => (
-  <div id="skills" className="items-box">
+  <div id="skills" className="skills-box">
 
     <h2 className='section-title'>SKILLS</h2>
 
