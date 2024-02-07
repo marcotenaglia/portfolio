@@ -348,6 +348,10 @@ button {
         justify-content: space-between;
         gap: 2em;
     }
+
+    .nav-list {
+        display: flex;
+    }
 }
 
 @media (min-width: 769px) {
@@ -358,11 +362,15 @@ button {
     .nav-a {
         display: flex;
     }
+
+    .nav-list {
+        display: none !important;
+    }
 }
 
 .hamburguer-menu {
-    width: 30px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
@@ -388,7 +396,7 @@ button {
 
 
 .open .hamburguer-line:nth-child(1) {
-    transform: translateY(8.4px) rotate(45deg);
+    transform: translateY(10.3px) rotate(45deg);
     transition: ease-in 0.5s;
 }
 
@@ -400,7 +408,7 @@ button {
 }
 
 .open .hamburguer-line:nth-child(3) {
-    transform: translateY(-8.4px) rotate(-45deg);
+    transform: translateY(-10.3px) rotate(-45deg);
     transition: ease-in 0.5s;
 }
 
