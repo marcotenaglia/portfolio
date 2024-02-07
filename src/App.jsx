@@ -1,13 +1,16 @@
-import './App.css'
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
 import React, { useState, useEffect } from 'react';
+import './App.css'
+import AppHeader from './components/AppHeader';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+
 
 
 function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
   useEffect(() => {
@@ -20,35 +23,18 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
 
   return (
 
     <>
 
-      <body className={isDarkMode ? "body-light" : "body-dark"}>
+      <div className={isDarkMode ? "body-light" : "body-dark"}>
 
-        <header className="header center">
-          <div className='header-title'>
-            <div>Marco</div> 
-            <div>Tenaglia</div>
-          </div>
-          <nav className="nav">
-
-            <div className='nav-btns'>
-              <a href="#skills" className={`nav-anchor-tag ${isDarkMode ? "nav-anchor-tag-light" : "nav-anchor-tag-dark"}`}>Skills</a>
-              <a href="#projects" className={`nav-anchor-tag ${isDarkMode ? "nav-anchor-tag-light" : "nav-anchor-tag-dark"}`}>Projects</a>
-              <a href="#contact" className={`nav-anchor-tag ${isDarkMode ? "nav-anchor-tag-light" : "nav-anchor-tag-dark"}`}>Contact</a>
-              <button className='dark-mode-btn' onClick={toggleDarkMode}>
-                <span className="material-symbols-outlined dark-mode">
-                  {isDarkMode ? 'light_mode' : 'dark_mode'}
-                </span>
-              </button>
-            </div>
-
-          </nav>
-        </header>
-
-
+      <AppHeader isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
         <main className="main">
           <div className='container'>
 
@@ -77,7 +63,7 @@ function App() {
 
           </div>
         </main>
-      </body>
+      </div>
     </>
   )
 }
