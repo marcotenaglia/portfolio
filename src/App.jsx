@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
@@ -53,8 +53,8 @@ function App() {
                   <Projects title="To-do List" description="Easy and intuitive to-do list for pending tasks." languages={['HTML', 'CSS', 'JavaScript']} linkWeb='https://marcotenaglia.github.io/todo-list-js/' linkCode='https://github.com/marcotenaglia/todo-list-js' isDarkMode={isDarkMode} />
                   <Projects title="E-commerce" description="Responsive e-commerce with shoping cart." languages={['HTML', 'CSS', 'SASS', 'javaScript']} linkWeb='https://marcotenaglia.github.io/e-commerce-js/' linkCode='https://github.com/marcotenaglia/e-commerce-js' isDarkMode={isDarkMode} />
                   <Projects title="Music Single Web" description="An exclusive preview of the band's song. People would find a QR code at the end of a physical fanzine that redirects to this demo version." languages={['HTML', 'CSS', 'SASS']} linkWeb='https://marcotenaglia.github.io/las-aventuras-demo/' linkCode='https://github.com/marcotenaglia/las-aventuras-demo' isDarkMode={isDarkMode} />
-                  <Projects title="Dispatch Notes Generation" description="Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=CtWlEnBq0h0' linkCode='https://github.com/marcotenaglia/crowntainer-apps-script' isDarkMode={isDarkMode} />
-                  <Projects title="Dispatch Notes Generation" description="Google Apps Script converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=B-kkEBgC9p4' linkCode='https://github.com/marcotenaglia/medios-litoral-apps-script' isDarkMode={isDarkMode} />
+                  <Projects title="Dispatch Notes" description="Google Apps Script code that converts spreadsheet's pertinent information into a delivery receipt PDF and saves it in Google Drive." languages={['GAS', 'javaScript', 'CSS', 'HTML']} linkWeb='https://www.youtube.com/watch?v=CtWlEnBq0h0' linkCode='https://github.com/marcotenaglia/crowntainer-apps-script' isDarkMode={isDarkMode} />
+                  <Projects title="Budget Generation" description="Google Apps Script code that fills a template with updated info from a spreadsheet, converts it into a PDF and saves it in Google Drive." languages={['GAS', 'javaScript']} linkWeb='https://www.youtube.com/watch?v=B-kkEBgC9p4' linkCode='https://github.com/marcotenaglia/medios-litoral-apps-script' isDarkMode={isDarkMode} />
                 </div>
               </div>
               <Skills isDarkMode={isDarkMode} />

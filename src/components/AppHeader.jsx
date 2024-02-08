@@ -12,8 +12,8 @@ const AppHeader = ({ isDarkMode, toggleDarkMode, isMenuOpen, toggleMenu }) => {
         <header className="header center">
 
             <div className='header-title'>
-                <div>Marco</div>
-                <div>Tenaglia</div>
+                <div>M</div>
+                <div>T</div>
             </div>
 
             <nav className="nav">

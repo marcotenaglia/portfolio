@@ -31,7 +31,7 @@ button {
 .container {
     display: flex;
     flex-flow: column;
-    margin-top: 12em;
+    margin-top: 25vh;
     justify-content: center;
     align-items: center;
 }
@@ -89,9 +89,10 @@ button {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: .5em;
+    gap: .3em;
     font-weight: 500;
     flex-wrap: wrap;
+    font-size: 1.2em;
 }
 
 .nav-anchor-tag {
@@ -166,7 +167,7 @@ button {
 }
 
 .card-dark {
-    background-color: rgba(50, 45, 116, 0.226);
+    background-color: rgba(50, 45, 116, 0.282);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
 }
@@ -245,13 +246,15 @@ button {
 .items-dark>* {
     background-color: rgba(74, 54, 138, 0.248);
     transition: ease-in 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
+
 
 }
 
 .items-light>* {
     background-color: rgba(76, 28, 236, 0.162);
     transition: ease-in 0.3s;
-    /*  box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; VER ESTOOOOOOOO*/
+    box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
 }
 
 
@@ -352,6 +355,14 @@ button {
     .nav-list {
         display: flex;
     }
+
+    .title {
+        font-size: 2.2em;
+    }
+
+    .subtitle {
+        font-size: 1.4em;
+    }
 }
 
 @media (min-width: 769px) {
@@ -382,8 +393,8 @@ button {
     width: 90%;
     height: 2px;
     border-radius: 2px; 
-    transition: ease-in 0.5s; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+    transition: ease-in-out 0.2s; 
 }
 
 .hamburguer-line-dark {
@@ -397,19 +408,19 @@ button {
 
 .open .hamburguer-line:nth-child(1) {
     transform: translateY(10.3px) rotate(45deg);
-    transition: ease-in 0.5s;
+    transition: ease-in-out 0.2s;
 }
 
 .open .hamburguer-line:nth-child(2) {
     opacity: 0;
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
 
 
 }
 
 .open .hamburguer-line:nth-child(3) {
     transform: translateY(-10.3px) rotate(-45deg);
-    transition: ease-in 0.5s;
+    transition: ease-in-out 0.2s;
 }
 
 .nav {
@@ -431,7 +442,6 @@ button {
 
 .nav-list-dark {
     background: rgb(9, 4, 47);
-    background: linear-gradient(0deg, rgb(11, 9, 27) 0%, rgb(26, 2, 91) 50%, rgb(13, 11, 35) 100%);
     background-size: 130%;
     background-repeat: no-repeat;
     transition: ease-in 0.3s;
@@ -440,7 +450,6 @@ button {
 
 .nav-list-light {
     background: rgb(186, 167, 232);
-    background: linear-gradient(0deg, rgba(186, 167, 232, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(186, 167, 232, 1) 100%);
     color: black;
     transition: ease-in 0.3s;
 }
