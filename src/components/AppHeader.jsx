@@ -22,7 +22,7 @@ const AppHeader = ({ isDarkMode, toggleDarkMode, isMenuOpen, toggleMenu }) => {
                     <a href="#projects" className={`nav-anchor-tag nav-anchor-tag-${isDarkMode ? "light" : "dark"}`}>projects</a>
                     <a href="#contact" className={`nav-anchor-tag nav-anchor-tag-${isDarkMode ? "light" : "dark"}`}>contact</a>
                 </div>
-                <button className='dark-mode-btn' onClick={toggleDarkMode}>
+                <button className={`dark-mode-btn dark-mode-btn-${isDarkMode ? "light" : "dark"}`} onClick={toggleDarkMode}>
                     <span className="material-symbols-outlined dark-mode">{isDarkMode ? 'light_mode' : 'dark_mode'}</span>
                 </button>
                 <div className={`nav-list nav-list-${isDarkMode ? "light" : "dark"}`} style={{ display: isMenuOpen ? "flex" : "none" }}>
