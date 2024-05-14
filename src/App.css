@@ -437,6 +437,10 @@ button {
     transition: ease-in-out 0.2s;
 }
 
+.open::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+  }
+
 .nav {
     display: flex;
     align-items: center;
