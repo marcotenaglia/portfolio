@@ -8,6 +8,7 @@ const Skills = ({ isDarkMode }) => (
 
     <ul className={`items-list items-${isDarkMode ? "light" : "dark"}`}>
       <li className="items">Javascript</li>
+      <li className="items">Wordpress</li>
       <li className="items">React</li>
       <li className="items">Google Apps Script</li>
       <li className="items">Appsheet</li>
