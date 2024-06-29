@@ -3,8 +3,8 @@ body {
 }
 
 .body-dark {
-    background: rgb(9, 4, 47);
-    background: linear-gradient(0deg, rgb(11, 9, 27) 0%, rgb(26, 2, 91) 50%, rgb(13, 11, 35) 100%);
+    background: rgb(14, 7, 67);
+    background: linear-gradient(0deg, rgb(17, 14, 41) 0%, rgb(32, 3, 112) 50%, rgb(20, 17, 54) 100%);
     background-size: 130%;
     background-repeat: no-repeat;
     transition: ease-in 0.3s;
@@ -13,8 +13,8 @@ body {
 
 
 .body-light {
-    background: rgb(186, 167, 232);
-    background: linear-gradient(0deg, rgba(186, 167, 232, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(186, 167, 232, 1) 100%);
+    background: rgb(176, 167, 232);
+    background: linear-gradient(0deg, rgb(171, 167, 232) 0%, rgb(255, 255, 255) 50%, rgb(171, 167, 232) 100%);
     color: black;
     transition: ease-in 0.3s;
 }
@@ -167,13 +167,13 @@ button {
 }
 
 .card-dark {
-    background-color: rgba(50, 45, 116, 0.282);
+    background-color: rgba(56, 50, 131, 0.282);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
 }
 
 .card-light {
-    background-color: rgba(68, 0, 157, 0.145);
+    background-color: rgba(75, 0, 174, 0.145);
     box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
@@ -244,7 +244,7 @@ button {
 }
 
 .items-dark>* {
-    background-color: rgba(74, 54, 138, 0.248);
+    background-color: rgba(79, 57, 150, 0.248);
     transition: ease-in 0.3s;
     box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
 
@@ -292,7 +292,7 @@ button {
 }
 
 .contact-items-dark:hover {
-    background-color: rgba(63, 51, 132, 0.504);
+    background-color: rgba(70, 56, 146, 0.504);
     transition: 0.3s;
 
 }
@@ -459,7 +459,7 @@ button {
 }
 
 .nav-list-dark {
-    background: rgb(9, 4, 47);
+    background: rgb(11, 5, 60);
     background-size: 130%;
     background-repeat: no-repeat;
     transition: ease-in 0.3s;
