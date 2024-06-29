@@ -173,7 +173,7 @@ button {
 }
 
 .card-light {
-    background-color: rgba(75, 0, 174, 0.145);
+    background-color: rgba(32, 0, 174, 0.145);
     box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
@@ -252,7 +252,7 @@ button {
 }
 
 .items-light>* {
-    background-color: rgba(76, 28, 236, 0.162);
+    background-color: rgba(38, 28, 236, 0.162);
     transition: ease-in 0.3s;
     box-shadow: rgba(0, 0, 0, 0.212) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
 }
@@ -287,7 +287,7 @@ button {
 }
 
 .contact-items-light {
-    background-color: rgba(39, 23, 185, 0.223);
+    background-color: rgba(59, 42, 210, 0.159);
 
 }
 
