@@ -99,6 +99,7 @@ button {
     font-weight: 500;
     margin-left: 1.5em;
     text-decoration: none;
+    padding: 0 0 0.3em 0;
 
 }
 
@@ -468,7 +469,7 @@ button {
 }
 
 .nav-list-light {
-    background: rgb(186, 167, 232);
+    background: rgb(155, 153, 224);
     color: black;
     transition: ease-in 0.3s;
 }
